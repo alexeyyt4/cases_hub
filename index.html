@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Личные дела MC&D</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Сброс и общие стили */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #f0f8ff;
+      color: #320042;
+      font-family: 'Georgia', serif;
+      overflow-x: hidden;
+    }
+
+    /* Фиксированная шапка */
+    #header {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 150px;
+      background: url('https://scp-wiki.wdfiles.com/local--files/theme%3Amcd/body_bg_MCD2.png') repeat-x top center;
+      z-index: 1000;
+    }
+    /* Логотип поверх фона */
+    #header-logo {
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 120px;
+    }
+
+    /* Основной контент под шапкой */
+    #content {
+      margin-top: 150px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2em;
+      background: #fff0ff;
+      border: 2px solid #6c006c;
+      box-shadow: 3px 3px 6px rgba(108,0,108,0.5);
+    }
+
+    h1 { color: #320042; margin-top: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1em 0;
+    }
+    ul li { margin: 0.5em 0; }
+
+    a {
+      color: #6C4279;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <!-- Фиксированная шапка с фоновым узором -->
+  <div id="header">
+    <!-- Логотип поверх -->
+    <img id="header-logo" src="https://scp-wiki.wdfiles.com/local--files/theme%3Ablack-market/MCDLogo2-small.png" alt="MC&D Logo">
+  </div>
+
+  <!-- Основной контент -->
+  <div id="content">
+    <h1>Личные дела</h1>
+    <ul>
+      <li><a href="https://alexeyyt4.github.io/antichrist/" target="_blank">Личное дело: Антихрист</a></li>
+      <li><a href="kor_shun_casefile_final.html">Личное дело: Коршун</a></li>
+    </ul>
+    <p><a href="https://scpfoundation.net/marshall-carter-and-dark-hub">← Главное</a></p>
+  </div>
+</body>
+</html>
